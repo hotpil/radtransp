@@ -1,0 +1,25 @@
+E[eV] 10.2
+gaunt 0.2
+osc_force 1.3
+A[s-1] 5.0e8
+delta0 1.0e-5
+g0 1
+g1 3
+eps_integ_width 20
+neps 300
+nmu 10
+mu0 0.1
+niterations 10
+iter_accuracy 1.0e-4
+profile_type 2
+SOLPS_file 'plasma.in'
+intens_mu 2
+half_width 1.0e-5
+no_absorption 0
+
+Comments:
+1) Intensity is integrated within freq range [1-eps_integ_width*delta0;1+eps_integ_width*delta0]
+2) default lTe=0.5
+3) profile_type = 1 means Lorentz, 2 - Gauss, 3- Voigt (Doppler + ion Stark presented by Lorentzian), 4 - Holtsmark, 5 - convolution, Voigt + Holtsmark, 6 - Ion Holtsmark and Doppler, 7 - rectangular profile with Doppler width; 8 - constant broadening with T=T(..) and n = n(..)
+4) intens_mu - save intens.dat file for every intens_mu mu-steps
+5) half_width works only with profile_type 8; profile is 3
